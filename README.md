@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Dr. Suraj Kataria Portfolio
 
-# Run and deploy your AI Studio app
+Professional academic and research portfolio for Dr. Suraj Kataria, Ph.D.
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/drive/1exWLPIb1hzaik01i-6s2QDOed9EOtXf-
+**Prerequisites:** Node.js 18+
 
-## Run Locally
+1. Install dependencies: `npm install`
+2. Start the app: `npm run dev`
+3. Open http://localhost:3000
 
-**Prerequisites:**  Node.js
+## Deploy on Vercel
 
+This is a Vite + React site. Vercel will detect the framework, run `npm run build`, and serve `dist`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Option 1 — Import the GitHub repo (recommended)
+
+1. Sign in at [vercel.com](https://vercel.com) and click **Add New… → Project**.
+2. Import `amritsarvivo15-cloud/Nishant`.
+3. Confirm:
+   - **Framework Preset:** Vite
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+4. Click **Deploy**. Production deploys from `main`; later pushes to `main` auto-deploy.
+
+No Gemini API key is required for this static portfolio.
+
+### Option 2 — Vercel CLI
+
+```bash
+npm install
+npx vercel
+```
+
+Use `npx vercel --prod` for a production deploy after the first link.
