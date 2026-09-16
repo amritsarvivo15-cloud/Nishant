@@ -1,0 +1,22 @@
+{
+  "name": "mbhulk-connector",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Office-side one-org MBHulk Spend Report discovery connector (Playwright).",
+  "scripts": {
+    "discover": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.8.2"
+  }
+}
