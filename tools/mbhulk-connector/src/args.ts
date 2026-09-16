@@ -35,7 +35,7 @@ export function connectorRoot(): string {
   return path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 }
 
-export function parseDiscoverArgs(argv: string[], cwd = process.cwd()): DiscoverArgs {
+export function parseDiscoverArgs(argv: string[]): DiscoverArgs {
   const orgId = (readFlag(argv, "orgId") ?? readFlag(argv, "org-id") ?? "").trim();
   const start = (readFlag(argv, "start") ?? "").trim();
   const end = (readFlag(argv, "end") ?? "").trim();
@@ -90,7 +90,7 @@ export function parseDiscoverArgs(argv: string[], cwd = process.cwd()): Discover
     path.join(root, ".auth", "storage-state.json");
   const debugDir =
     readFlag(argv, "debugDir") ??
-    path.join(cwd, "artifacts", "mbhulk-debug");
+    path.join(path.resolve(root, "../.."), "artifacts", "mbhulk-debug");
 
   return {
     orgId,

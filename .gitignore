@@ -29,3 +29,4 @@ tools/mbhulk-connector/.profile/
 tools/mbhulk-connector/.playwright-profile/
 **/*.storage-state.json
 artifacts/mbhulk-debug/
+tools/mbhulk-connector/artifacts/
